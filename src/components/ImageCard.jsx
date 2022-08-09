@@ -6,7 +6,7 @@ const ImageCard = ({ image }) => {
         <div className="bg-veryDarkGray text-almostWhite max-w-sm rounded overflow-hidden shadow-lg dark:bg-almostWhite dark:text-veryDarkGray">
             <img src={image.webformatURL} alt="" className="w-full" />
             <div className="px-6 py-4">
-                <div className="font-bold text-purple text-xl mb-2">
+                <div className="font-bold text-darkTeal text-xl mb-2">
                 Photo by {image.user}
                 </div>
                 <ul>
