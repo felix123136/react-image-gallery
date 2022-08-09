@@ -31,7 +31,7 @@ const App = () => {
         <h1 class="text-4xl mt-16 mb-24 text-center font-extrabold text-slate-200 tracking-tight text-veryDarkGray dark:text-almostWhite md:text-5xl">React Image Gallery</h1>
         <ImageSearch searchTerm={(text) => setSearchTerm(text)}/>
         {!isLoading && images?.length === 0 && <h1 className="text-5xl text-center mx-auto mt-16 mb-48 dark:text-almostWhite">No Images Found!</h1>} 
-        {isLoading ? <h1 className="text-6xl text-center mx-auto mt-16 mb-48 dark:text-almostWhite">Loading...</h1> : 
+        {isLoading ? <h1 className="text-6xl text-center mx-auto mt-16 pb-48 dark:text-almostWhite">Loading...</h1> : 
           <div className='justify-items-center items-center grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
             {images.map((image) => {
               return <ImageCard key={image.id} image={image}/>
